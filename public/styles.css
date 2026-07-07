@@ -1,11 +1,12 @@
 /* MRM フリーランサー登録・管理システム 共通スタイル */
+/* カラーパレットは aitrigger.co.jp のトンマナに準拠（赤 #c5161d / 墨 #393939） */
 :root {
-  --primary: #0d5bd7;
-  --primary-dark: #0a47a8;
-  --ink: #1a2333;
-  --muted: #6b7686;
-  --line: #dde3ec;
-  --bg: #f5f7fb;
+  --primary: #c5161d;
+  --primary-dark: #a01218;
+  --ink: #393939;
+  --muted: #757575;
+  --line: #e3e3e3;
+  --bg: #f8f8f8;
   --panel: #ffffff;
   --danger: #c62828;
   --danger-bg: #fdecea;
@@ -17,7 +18,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Meiryo", sans-serif;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Meiryo", sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.7;
@@ -60,7 +61,7 @@ main.container { padding-top: 28px; padding-bottom: 40px; }
 
 /* ---- トップ（ヒーロー） ---- */
 .hero { text-align: center; padding: 56px 0 40px; }
-.hero h1 { font-size: 32px; line-height: 1.5; }
+.hero h1 { font-size: 32px; line-height: 1.6; font-family: "Noto Serif JP", "Yu Mincho", YuMincho, serif; font-weight: 600; }
 .hero-lead { color: var(--muted); margin: 16px 0 28px; }
 .hero-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-top: 24px; }
@@ -91,7 +92,7 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--primary); o
 .inline-unit { display: flex; align-items: center; gap: 8px; }
 .check-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px; }
 .check-item { display: flex; align-items: center; gap: 6px; font-size: 14px; padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; cursor: pointer; background: #fff; }
-.check-item:has(input:checked) { border-color: var(--primary); background: #eef4ff; font-weight: 600; }
+.check-item:has(input:checked) { border-color: var(--primary); background: #fbf1f1; font-weight: 600; }
 .form-actions { margin-top: 28px; text-align: center; }
 .form-actions-split { display: flex; justify-content: space-between; align-items: center; }
 .errors { background: var(--danger-bg); color: var(--danger); border: 1px solid #f2c2be; border-radius: 8px; padding: 12px 16px; font-size: 14px; margin-bottom: 16px; }
@@ -117,15 +118,15 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--primary); o
 .data-table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; font-size: 14px; }
 .data-table th, .data-table td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
 .data-table td:nth-last-child(2), .data-table td:first-child a { white-space: nowrap; }
-.data-table thead th { background: #f0f3f9; color: var(--muted); font-size: 12px; font-weight: 700; white-space: nowrap; }
+.data-table thead th { background: #f4f4f4; color: var(--muted); font-size: 12px; font-weight: 700; white-space: nowrap; }
 .data-table tr.clickable { cursor: pointer; }
-.data-table tr.clickable:hover { background: #f4f8ff; }
+.data-table tr.clickable:hover { background: #faf5f5; }
 .data-table .sub { font-size: 12px; color: var(--muted); }
 .nowrap { white-space: nowrap; }
 .skills-cell { max-width: 240px; }
 
-.tag { display: inline-block; background: #eef4ff; color: var(--primary-dark); font-size: 12px; padding: 1px 9px; border-radius: 99px; margin: 1px 2px 1px 0; white-space: nowrap; }
-.tag-sys { background: #eceff4; color: var(--muted); }
+.tag { display: inline-block; background: #f9ecec; color: var(--primary-dark); font-size: 12px; padding: 1px 9px; border-radius: 99px; margin: 1px 2px 1px 0; white-space: nowrap; }
+.tag-sys { background: #efefef; color: var(--muted); }
 
 .badge { display: inline-block; font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 99px; white-space: nowrap; }
 .st-new      { background: #e3f2fd; color: #1565c0; }
