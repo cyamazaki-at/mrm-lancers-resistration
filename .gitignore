@@ -1,0 +1,6 @@
+# 登録データ（個人情報）はリポジトリに含めない
+data/*.db
+data/*.db-*
+
+node_modules/
+.DS_Store
